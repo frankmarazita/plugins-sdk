@@ -1,0 +1,23 @@
+{
+  "name": "@frankmarazita/sensand-sdk-test",
+  "version": "0.0.1",
+  "description": "SDK for Sensand",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^8.4.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  }
+}
