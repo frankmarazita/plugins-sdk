@@ -56,7 +56,9 @@ jobs:
       - name: Publish package to npm
         if: steps.version_check.outputs.current_version != ''
         run: |
-          npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          echo "@${{ github.repository_owner }}:registry=https://registry.npmjs.org" >> .npmrc
+
           npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
