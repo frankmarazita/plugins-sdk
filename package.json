@@ -1,7 +1,7 @@
 {
-  "name": "@frankmarazita/sensand-sdk-test",
+  "name": "@frankmarazita/plugins-sdk",
   "version": "0.0.1",
-  "description": "SDK for Sensand",
+  "description": "Sensand Plugins SDK",
   "files": [
     "dist"
   ],
