@@ -1,4 +1,4 @@
-# sensand-sdk-test
+# plugins-sdk
 
 Sensand SDK
 
